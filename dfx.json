@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "enroll_backend": {
+      "main": "src/enroll_backend/main.mo",
+      "type": "motoko"
+    },
+    "enroll_frontend": {
+      "dependencies": [
+        "enroll_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/enroll_frontend/src/index.html"
+      },
+      "source": [
+        "src/enroll_frontend/assets",
+        "dist/enroll_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
